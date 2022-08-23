@@ -2,14 +2,16 @@
 
 2. install jdk8 and maven
 
-3. under this directory:
+3. under this directory, execute command:
    mvn clean package
 
-4. make sure the following directories can be r/w by docker
+4. make sure the following directories can be read/write by docker
    ./db
    ./db/mysql
    ./localstorage/admin-file
    ./localstorage/front-file
+   ./logDir/front-logs
+   ./logDir/admin-logs
 
 5. cd ./novel-admin, execute command:
    docker build -t novel-admin:latest .
