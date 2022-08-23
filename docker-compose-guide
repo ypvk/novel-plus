@@ -1,0 +1,25 @@
+1. install docker and docker-compose
+
+2. install jdk8 and maven
+
+3. under this directory:
+   mvn clean package
+
+4. make sure the following directories can be r/w by docker
+   ./db
+   ./db/mysql
+   ./localstorage/admin-file
+   ./localstorage/front-file
+
+5. cd ./novel-admin, execute command:
+   docker build -t novel-admin:latest .
+
+6. cd ./novel-front, execute command:
+   docker build -t novel-front:latest .
+
+7. cd project home, execute commnad:
+   docker-compose up
+
+8. visit the admim app: http://localhost:8080
+
+9. visit the front app: http://localhost
