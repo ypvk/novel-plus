@@ -27,6 +27,7 @@ services:
       - password=test123456
     volumes:
       - "./localstorage/front-file:/var/pic"
+      - "./logDir/front-logs:/logs"
     ports:
       - 80:8083
     depends_on:
@@ -44,6 +45,7 @@ services:
       - password=test123456
     volumes:
       - "./localstorage/admin-file:/var/pic"
+      - "./logDir/admin-logs:/logs"
     ports:
       - 8080:8088
     depends_on:
