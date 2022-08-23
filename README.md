@@ -1,16 +1,4 @@
-[![index]( https://youdoc.github.io/img/tencent.jpg )]( https://cloud.tencent.com/act/cps/redirect?redirect=2446&cps_key=736e609d66e0ac4e57813316cec6fd0b&from=console )
 
-<p align="center">
-    <a href='https://github.com/201206030/novel-plus'><img alt="Github stars" src="https://img.shields.io/github/stars/201206030/novel-plus?logo=github"></a>
-    <a href='https://github.com/201206030/novel-plus'><img alt="Github forks" src="https://img.shields.io/github/forks/201206030/novel-plus?logo=github"></a>
-    <a href='https://gitee.com/novel_dev_team/novel-plus'><img alt="Gitee stars" src="https://gitee.com/novel_dev_team/novel-plus/badge/star.svg?theme=gitee"></a>
-    <a href='https://gitee.com/novel_dev_team/novel-plus'><img alt="Gitee forks" src="https://gitee.com/novel_dev_team/novel-plus/badge/fork.svg?theme=gitee"></a>
-    <a href="https://github.com/201206030/novel-plus"><img src="https://visitor-badge.glitch.me/badge?page_id=201206030.novel-plus" alt="visitors"></a>
-</p>
-
-<p align="center">
-      👉 <a href='https://novel.xxyopen.com'>官网</a>  |  👉 <a href='http://47.106.243.172:8888'>演示站点</a>  |  👉 <a href='https://docs.xxyopen.com/course/novelplus/'>项目文档（安装教程）</a>
-</p> 
 
 ## 学习版
 
@@ -58,6 +46,11 @@ novel-plus -- 父工程
 | MySQL               | 数据库服务
 | Thymeleaf           | 模板引擎
 | Layui               | 前端 UI 框架
+
+
+## docker-compose 启动
+请参考docker-compose-guide
+
 
 ## 项目截图
 
