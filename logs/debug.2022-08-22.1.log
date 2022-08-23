@@ -1,0 +1,1131 @@
+2022-08-22 14:46:37,571 INFO (StartupInfoLogger.java:50)- Starting AdminApplication on C02ZX2CNMD6R with PID 44378 (/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/novel-admin/target/classes started by i532064 in /System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus)
+2022-08-22 14:46:37,573 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2022-08-22 14:46:37,575 INFO (SpringApplication.java:663)- The following profiles are active: dev
+2022-08-22 14:46:37,614 INFO (AbstractApplicationContext.java:590)- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d470d0: startup date [Mon Aug 22 14:46:37 CST 2022]; root of context hierarchy
+2022-08-22 14:46:38,576 INFO (RepositoryConfigurationDelegate.java:163)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-22 14:46:38,820 INFO (DefaultListableBeanFactory.java:824)- Overriding bean definition for bean 'xssFilter' with a different definition: replacing [Generic bean: class [com.java2nb.common.xss.XssFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/novel-admin/target/classes/com/java2nb/common/xss/XssFilter.class]] with [Root bean: class [org.springframework.boot.web.servlet.FilterRegistrationBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2022-08-22 14:46:38,961 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$11b3b4cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,056 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$6277973] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,071 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,080 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,090 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,092 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$a0c64671] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,100 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c8a17eb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,145 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'shiroConfig' of type [com.java2nb.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$b6381389] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,278 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,295 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,299 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,568 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'userRealm' of type [com.java2nb.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,598 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,601 INFO (EhCacheManager.java:158)- Cache with name 'com.java2nb.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2022-08-22 14:46:39,628 INFO (EhCacheManager.java:165)- Added EhCache named [com.java2nb.system.shiro.UserRealm.authorizationCache]
+2022-08-22 14:46:39,645 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,672 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,703 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:39,746 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:46:40,015 INFO (TomcatWebServer.java:91)- Tomcat initialized with port(s): 80 (http)
+2022-08-22 14:46:40,025 INFO (DirectJDKLog.java:180)- Initializing ProtocolHandler ["http-nio-80"]
+2022-08-22 14:46:40,031 INFO (DirectJDKLog.java:180)- Starting service [Tomcat]
+2022-08-22 14:46:40,031 INFO (DirectJDKLog.java:180)- Starting Servlet Engine: Apache Tomcat/8.5.29
+2022-08-22 14:46:40,035 INFO (DirectJDKLog.java:180)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/i532064/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2022-08-22 14:46:40,163 INFO (DirectJDKLog.java:180)- Initializing Spring embedded WebApplicationContext
+2022-08-22 14:46:40,164 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 2551 ms
+2022-08-22 14:46:40,426 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-08-22 14:46:40,427 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-08-22 14:46:40,427 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-08-22 14:46:40,427 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'requestContextFilter' to: [/*]
+2022-08-22 14:46:40,427 INFO (AbstractFilterRegistrationBean.java:257)- Mapping filter: 'xssFilter' to urls: [/*]
+2022-08-22 14:46:40,427 INFO (AbstractFilterRegistrationBean.java:257)- Mapping filter: 'webStatFilter' to urls: [/*]
+2022-08-22 14:46:40,428 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2022-08-22 14:46:40,428 INFO (ServletRegistrationBean.java:185)- Servlet statViewServlet mapped to [/druid/*]
+2022-08-22 14:46:40,430 INFO (ServletRegistrationBean.java:185)- Servlet dispatcherServlet mapped to [/]
+2022-08-22 14:46:40,830 ERROR (Log4j2Impl.java:53)- init datasource error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:734)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1827)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:470)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.java2nb.AdminApplication.main(AdminApplication.java:30)
+2022-08-22 14:46:40,832 ERROR (Log4j2Impl.java:53)- {dataSource-1} init error
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:734)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1827)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:470)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.java2nb.AdminApplication.main(AdminApplication.java:30)
+2022-08-22 14:46:40,833 INFO (Log4j2Impl.java:106)- {dataSource-1} inited
+2022-08-22 14:46:40,833 WARN (AbstractApplicationContext.java:558)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logAspect': Unsatisfied dependency expressed through field 'logService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logServiceImpl': Unsatisfied dependency expressed through field 'logMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/novel-admin/target/classes/com/java2nb/common/dao/LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/java2nb/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'test'
+2022-08-22 14:46:40,836 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,840 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,843 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,846 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,849 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,852 INFO (DirectJDKLog.java:180)- Stopping service [Tomcat]
+2022-08-22 14:46:40,853 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,856 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,860 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,863 INFO (ConditionEvaluationReportLoggingListener.java:101)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-22 14:46:40,863 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,866 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,867 ERROR (SpringApplication.java:842)- Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logAspect': Unsatisfied dependency expressed through field 'logService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logServiceImpl': Unsatisfied dependency expressed through field 'logMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/novel-admin/target/classes/com/java2nb/common/dao/LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/java2nb/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.java2nb.AdminApplication.main(AdminApplication.java:30)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logServiceImpl': Unsatisfied dependency expressed through field 'logMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/novel-admin/target/classes/com/java2nb/common/dao/LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/java2nb/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/novel-admin/target/classes/com/java2nb/common/dao/LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/java2nb/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/java2nb/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:729)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:470)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/java2nb/common/config/DruidDBConfig.class]: Invocation of init method failed; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721)
+	... 56 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:734)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1827)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
+	... 67 common frames omitted
+2022-08-22 14:46:40,869 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:46:40,872 ERROR (Log4j2Impl.java:53)- create connection error, url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1454)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1516)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2080)
+2022-08-22 14:48:27,298 INFO (StartupInfoLogger.java:50)- Starting AdminApplication on C02ZX2CNMD6R with PID 44772 (/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/novel-admin/target/classes started by i532064 in /System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus)
+2022-08-22 14:48:27,300 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2022-08-22 14:48:27,301 INFO (SpringApplication.java:663)- The following profiles are active: dev
+2022-08-22 14:48:27,341 INFO (AbstractApplicationContext.java:590)- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d1dee39: startup date [Mon Aug 22 14:48:27 CST 2022]; root of context hierarchy
+2022-08-22 14:48:28,303 INFO (RepositoryConfigurationDelegate.java:163)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-22 14:48:28,515 INFO (DefaultListableBeanFactory.java:824)- Overriding bean definition for bean 'xssFilter' with a different definition: replacing [Generic bean: class [com.java2nb.common.xss.XssFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/novel-admin/target/classes/com/java2nb/common/xss/XssFilter.class]] with [Root bean: class [org.springframework.boot.web.servlet.FilterRegistrationBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2022-08-22 14:48:28,659 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$d537a87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:28,752 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$1c73f2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:28,768 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:28,776 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:28,787 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:28,790 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$9c660c29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:28,798 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4414469] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:28,839 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'shiroConfig' of type [com.java2nb.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$b1d7d941] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:28,995 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:29,013 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:29,017 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:29,298 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'userRealm' of type [com.java2nb.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:29,324 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:29,325 INFO (EhCacheManager.java:158)- Cache with name 'com.java2nb.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2022-08-22 14:48:29,374 INFO (EhCacheManager.java:165)- Added EhCache named [com.java2nb.system.shiro.UserRealm.authorizationCache]
+2022-08-22 14:48:29,378 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:29,407 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:29,437 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:29,474 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-22 14:48:29,766 INFO (TomcatWebServer.java:91)- Tomcat initialized with port(s): 80 (http)
+2022-08-22 14:48:29,778 INFO (DirectJDKLog.java:180)- Initializing ProtocolHandler ["http-nio-80"]
+2022-08-22 14:48:29,784 INFO (DirectJDKLog.java:180)- Starting service [Tomcat]
+2022-08-22 14:48:29,784 INFO (DirectJDKLog.java:180)- Starting Servlet Engine: Apache Tomcat/8.5.29
+2022-08-22 14:48:29,788 INFO (DirectJDKLog.java:180)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/i532064/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2022-08-22 14:48:29,915 INFO (DirectJDKLog.java:180)- Initializing Spring embedded WebApplicationContext
+2022-08-22 14:48:29,915 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 2575 ms
+2022-08-22 14:48:30,170 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-08-22 14:48:30,171 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-08-22 14:48:30,171 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-08-22 14:48:30,171 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'requestContextFilter' to: [/*]
+2022-08-22 14:48:30,171 INFO (AbstractFilterRegistrationBean.java:257)- Mapping filter: 'xssFilter' to urls: [/*]
+2022-08-22 14:48:30,172 INFO (AbstractFilterRegistrationBean.java:257)- Mapping filter: 'webStatFilter' to urls: [/*]
+2022-08-22 14:48:30,172 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2022-08-22 14:48:30,172 INFO (ServletRegistrationBean.java:185)- Servlet statViewServlet mapped to [/druid/*]
+2022-08-22 14:48:30,173 INFO (ServletRegistrationBean.java:185)- Servlet dispatcherServlet mapped to [/]
+2022-08-22 14:48:30,452 INFO (Log4j2Impl.java:106)- {dataSource-1} inited
+2022-08-22 14:48:30,987 DEBUG (ApplicationContextRegister.java:29)- ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d1dee39: startup date [Mon Aug 22 14:48:27 CST 2022]; root of context hierarchy
+2022-08-22 14:48:32,519 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.DictController.dict()
+2022-08-22 14:48:32,520 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/list],methods=[GET]}" onto public com.java2nb.common.utils.PageBean com.java2nb.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,521 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.DictController.add()
+2022-08-22 14:48:32,521 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,522 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.DictController.save(com.java2nb.common.domain.DictDO)
+2022-08-22 14:48:32,522 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/update]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.DictController.update(com.java2nb.common.domain.DictDO)
+2022-08-22 14:48:32,522 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.DictController.remove(java.lang.Long)
+2022-08-22 14:48:32,523 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.DictController.remove(java.lang.Long[])
+2022-08-22 14:48:32,523 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.java2nb.common.domain.DictDO> com.java2nb.common.controller.DictController.listType()
+2022-08-22 14:48:32,523 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2022-08-22 14:48:32,524 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.java2nb.common.domain.DictDO> com.java2nb.common.controller.DictController.listByType(java.lang.String)
+2022-08-22 14:48:32,526 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2022-08-22 14:48:32,526 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.java2nb.common.utils.PageBean com.java2nb.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,527 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.FileController.add()
+2022-08-22 14:48:32,527 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,527 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/info/{id}]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.FileController.info(java.lang.Long)
+2022-08-22 14:48:32,528 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.FileController.save(com.java2nb.common.domain.FileDO)
+2022-08-22 14:48:32,528 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/update]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.FileController.update(com.java2nb.common.domain.FileDO)
+2022-08-22 14:48:32,528 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2022-08-22 14:48:32,529 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.FileController.remove(java.lang.Long[])
+2022-08-22 14:48:32,529 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2022-08-22 14:48:32,529 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/download]}" onto public void com.java2nb.common.controller.FileController.fileDownload(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2022-08-22 14:48:32,533 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.GeneratorController.generator()
+2022-08-22 14:48:32,533 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.java2nb.common.controller.GeneratorController.list(java.lang.String)
+2022-08-22 14:48:32,533 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/downLoadCode/{tableName}]}" onto public void com.java2nb.common.controller.GeneratorController.downLoadCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2022-08-22 14:48:32,534 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/genCode],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.GeneratorController.genCode(java.lang.String)
+2022-08-22 14:48:32,534 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/batchDownload]}" onto public void com.java2nb.common.controller.GeneratorController.batchDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2022-08-22 14:48:32,534 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/batchCode],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.GeneratorController.batchCode(java.lang.String)
+2022-08-22 14:48:32,535 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.java2nb.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2022-08-22 14:48:32,535 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/update],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,535 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/genColumns],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.GeneratorController.genColumns(java.lang.String,org.springframework.ui.Model)
+2022-08-22 14:48:32,535 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/genColumns/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.GeneratorController.genColumnsList(java.lang.String)
+2022-08-22 14:48:32,536 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/genColumns/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.GeneratorController.save(java.util.List<com.java2nb.common.domain.GenColumnsDO>)
+2022-08-22 14:48:32,537 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.LogController.log()
+2022-08-22 14:48:32,537 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/log/list],methods=[GET]}" onto com.java2nb.common.domain.PageDO<com.java2nb.common.domain.LogDO> com.java2nb.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,538 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/log/remove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.common.controller.LogController.remove(java.lang.Long)
+2022-08-22 14:48:32,538 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.common.controller.LogController.batchRemove(java.lang.Long[])
+2022-08-22 14:48:32,539 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.java2nb.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-08-22 14:48:32,539 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error]}" onto public com.java2nb.common.utils.R com.java2nb.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-08-22 14:48:32,543 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorCodeController.AuthorCode()
+2022-08-22 14:48:32,543 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorCodeController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,543 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorCodeController.add()
+2022-08-22 14:48:32,544 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorCodeController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,544 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorCodeController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,544 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorCodeController.save(com.java2nb.novel.domain.AuthorCodeDO)
+2022-08-22 14:48:32,545 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorCodeController.update(com.java2nb.novel.domain.AuthorCodeDO)
+2022-08-22 14:48:32,545 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorCodeController.remove(java.lang.Long)
+2022-08-22 14:48:32,545 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorCodeController.remove(java.lang.Long[])
+2022-08-22 14:48:32,547 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorController.Author()
+2022-08-22 14:48:32,547 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,548 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorController.add()
+2022-08-22 14:48:32,548 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,548 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,549 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorController.save(com.java2nb.novel.domain.AuthorDO)
+2022-08-22 14:48:32,549 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorController.update(com.java2nb.novel.domain.AuthorDO)
+2022-08-22 14:48:32,549 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorController.remove(java.lang.Long)
+2022-08-22 14:48:32,549 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorController.remove(java.lang.Long[])
+2022-08-22 14:48:32,551 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.BookController.Book()
+2022-08-22 14:48:32,551 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.BookController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,552 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.BookController.add()
+2022-08-22 14:48:32,552 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.BookController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,552 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.BookController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,553 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.BookController.save(com.java2nb.novel.domain.BookDO)
+2022-08-22 14:48:32,553 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.BookController.update(com.java2nb.novel.domain.BookDO)
+2022-08-22 14:48:32,553 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.BookController.remove(java.lang.Long)
+2022-08-22 14:48:32,553 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.BookController.remove(java.lang.Long[])
+2022-08-22 14:48:32,555 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.CategoryController.Category()
+2022-08-22 14:48:32,555 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.CategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,556 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.CategoryController.add()
+2022-08-22 14:48:32,556 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.CategoryController.edit(java.lang.Integer,org.springframework.ui.Model)
+2022-08-22 14:48:32,556 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.CategoryController.detail(java.lang.Integer,org.springframework.ui.Model)
+2022-08-22 14:48:32,556 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.CategoryController.save(com.java2nb.novel.domain.CategoryDO)
+2022-08-22 14:48:32,557 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.CategoryController.update(com.java2nb.novel.domain.CategoryDO)
+2022-08-22 14:48:32,557 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.CategoryController.remove(java.lang.Integer)
+2022-08-22 14:48:32,557 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.CategoryController.remove(java.lang.Integer[])
+2022-08-22 14:48:32,559 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.NewsController.News()
+2022-08-22 14:48:32,559 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.NewsController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,559 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.NewsController.add()
+2022-08-22 14:48:32,560 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.NewsController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,560 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.NewsController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,560 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.NewsController.save(com.java2nb.novel.domain.NewsDO)
+2022-08-22 14:48:32,561 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.NewsController.update(com.java2nb.novel.domain.NewsDO)
+2022-08-22 14:48:32,561 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.NewsController.remove(java.lang.Long)
+2022-08-22 14:48:32,561 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.NewsController.remove(java.lang.Long[])
+2022-08-22 14:48:32,563 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.PayController.Pay()
+2022-08-22 14:48:32,563 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.PayController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,564 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.PayController.add()
+2022-08-22 14:48:32,564 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.PayController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,564 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.PayController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,564 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.PayController.save(com.java2nb.novel.domain.PayDO)
+2022-08-22 14:48:32,565 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.PayController.update(com.java2nb.novel.domain.PayDO)
+2022-08-22 14:48:32,565 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.PayController.remove(java.lang.Long)
+2022-08-22 14:48:32,565 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.PayController.remove(java.lang.Long[])
+2022-08-22 14:48:32,566 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/stat/countSta],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.StatController.countUser()
+2022-08-22 14:48:32,566 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/stat/tableSta],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.StatController.tableSta()
+2022-08-22 14:48:32,568 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.UserController.User()
+2022-08-22 14:48:32,568 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,568 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.UserController.add()
+2022-08-22 14:48:32,569 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.UserController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,569 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.UserController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,569 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.UserController.save(com.java2nb.novel.domain.UserDO)
+2022-08-22 14:48:32,570 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.UserController.update(com.java2nb.novel.domain.UserDO)
+2022-08-22 14:48:32,570 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.UserController.remove(java.lang.Long)
+2022-08-22 14:48:32,570 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.UserController.remove(java.lang.Long[])
+2022-08-22 14:48:32,573 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DataPermController.DataPerm()
+2022-08-22 14:48:32,573 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DataPermController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,573 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/add],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DataPermController.add()
+2022-08-22 14:48:32,574 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DataPermController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,574 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DataPermController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,574 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DataPermController.save(com.java2nb.system.domain.DataPermDO)
+2022-08-22 14:48:32,574 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/update]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DataPermController.update(com.java2nb.system.domain.DataPermDO)
+2022-08-22 14:48:32,575 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DataPermController.remove(java.lang.Long)
+2022-08-22 14:48:32,575 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DataPermController.remove(java.lang.Long[])
+2022-08-22 14:48:32,575 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/moduleName],methods=[GET]}" onto public java.util.List<com.java2nb.system.domain.DataPermDO> com.java2nb.system.controller.DataPermController.listModuleName()
+2022-08-22 14:48:32,575 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/tree],methods=[GET]}" onto com.java2nb.common.domain.Tree<com.java2nb.system.domain.DataPermDO> com.java2nb.system.controller.DataPermController.tree()
+2022-08-22 14:48:32,576 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/tree/{roleId}],methods=[GET]}" onto com.java2nb.common.domain.Tree<com.java2nb.system.domain.DataPermDO> com.java2nb.system.controller.DataPermController.tree(java.lang.Long)
+2022-08-22 14:48:32,577 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DeptController.dept()
+2022-08-22 14:48:32,578 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.java2nb.system.domain.DeptDO> com.java2nb.system.controller.DeptController.list()
+2022-08-22 14:48:32,578 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,578 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,578 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DeptController.save(com.java2nb.system.domain.DeptDO)
+2022-08-22 14:48:32,578 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/update]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DeptController.update(com.java2nb.system.domain.DeptDO)
+2022-08-22 14:48:32,579 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DeptController.remove(java.lang.Long)
+2022-08-22 14:48:32,579 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DeptController.remove(java.lang.Long[])
+2022-08-22 14:48:32,580 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.java2nb.common.domain.Tree<com.java2nb.system.domain.DeptDO> com.java2nb.system.controller.DeptController.tree()
+2022-08-22 14:48:32,580 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DeptController.treeView()
+2022-08-22 14:48:32,581 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[ || / || /index],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.LoginController.index(org.springframework.ui.Model)
+2022-08-22 14:48:32,581 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/login],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.LoginController.login(org.springframework.ui.Model)
+2022-08-22 14:48:32,582 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/login],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-08-22 14:48:32,582 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.LoginController.logout()
+2022-08-22 14:48:32,582 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/main],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.LoginController.main()
+2022-08-22 14:48:32,583 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/getVerify],methods=[GET]}" onto public void com.java2nb.system.controller.LoginController.getVerify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-08-22 14:48:32,584 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.MenuController.menu(org.springframework.ui.Model)
+2022-08-22 14:48:32,585 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/list]}" onto java.util.List<com.java2nb.system.domain.MenuDO> com.java2nb.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,585 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2022-08-22 14:48:32,585 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2022-08-22 14:48:32,586 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/save],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.MenuController.save(com.java2nb.system.domain.MenuDO)
+2022-08-22 14:48:32,586 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/update],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.MenuController.update(com.java2nb.system.domain.MenuDO)
+2022-08-22 14:48:32,586 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.MenuController.remove(java.lang.Long)
+2022-08-22 14:48:32,587 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.java2nb.common.domain.Tree<com.java2nb.system.domain.MenuDO> com.java2nb.system.controller.MenuController.tree()
+2022-08-22 14:48:32,587 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.java2nb.common.domain.Tree<com.java2nb.system.domain.MenuDO> com.java2nb.system.controller.MenuController.tree(java.lang.Long)
+2022-08-22 14:48:32,588 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleController.role()
+2022-08-22 14:48:32,589 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.java2nb.system.domain.RoleDO> com.java2nb.system.controller.RoleController.list()
+2022-08-22 14:48:32,589 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleController.add()
+2022-08-22 14:48:32,589 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,589 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/save],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.RoleController.save(com.java2nb.system.domain.RoleDO)
+2022-08-22 14:48:32,589 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/update],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.RoleController.update(com.java2nb.system.domain.RoleDO)
+2022-08-22 14:48:32,590 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/remove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.RoleController.save(java.lang.Long)
+2022-08-22 14:48:32,590 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.RoleController.batchRemove(java.lang.Long[])
+2022-08-22 14:48:32,591 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleDataPermController.RoleDataPerm()
+2022-08-22 14:48:32,592 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.RoleDataPermController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,592 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/add],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleDataPermController.add()
+2022-08-22 14:48:32,592 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleDataPermController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,592 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleDataPermController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,593 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.RoleDataPermController.save(com.java2nb.system.domain.RoleDataPermDO)
+2022-08-22 14:48:32,593 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/update]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.RoleDataPermController.update(com.java2nb.system.domain.RoleDataPermDO)
+2022-08-22 14:48:32,593 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.RoleDataPermController.remove(java.lang.Long)
+2022-08-22 14:48:32,593 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.RoleDataPermController.remove(java.lang.Long[])
+2022-08-22 14:48:32,594 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.java2nb.system.controller.SessionController.online()
+2022-08-22 14:48:32,594 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/online/list]}" onto public java.util.List<com.java2nb.system.domain.UserOnline> com.java2nb.system.controller.SessionController.list()
+2022-08-22 14:48:32,594 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2022-08-22 14:48:32,595 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.java2nb.system.controller.SessionController.sessionList()
+2022-08-22 14:48:32,596 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.user(org.springframework.ui.Model)
+2022-08-22 14:48:32,597 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/list],methods=[GET]}" onto com.java2nb.common.utils.PageBean com.java2nb.system.controller.SysUserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,597 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.add(org.springframework.ui.Model)
+2022-08-22 14:48:32,597 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.edit(org.springframework.ui.Model,java.lang.Long)
+2022-08-22 14:48:32,598 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/save],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.save(com.java2nb.system.domain.UserDO)
+2022-08-22 14:48:32,598 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/update],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.update(com.java2nb.system.domain.UserDO)
+2022-08-22 14:48:32,598 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.updatePeronal(com.java2nb.system.domain.UserDO)
+2022-08-22 14:48:32,598 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/remove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.remove(java.lang.Long)
+2022-08-22 14:48:32,598 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.batchRemove(java.lang.Long[])
+2022-08-22 14:48:32,599 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.java2nb.system.controller.SysUserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-22 14:48:32,599 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2022-08-22 14:48:32,599 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.resetPwd(com.java2nb.system.vo.UserVO)
+2022-08-22 14:48:32,599 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.adminResetPwd(com.java2nb.system.vo.UserVO)
+2022-08-22 14:48:32,600 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.java2nb.common.domain.Tree<com.java2nb.system.domain.DeptDO> com.java2nb.system.controller.SysUserController.tree()
+2022-08-22 14:48:32,600 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.treeView()
+2022-08-22 14:48:32,600 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.personal(org.springframework.ui.Model)
+2022-08-22 14:48:32,600 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-08-22 14:48:32,601 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-08-22 14:48:32,603 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2022-08-22 14:48:32,604 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2022-08-22 14:48:32,604 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2022-08-22 14:48:32,931 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-22 14:48:33,069 INFO (RequestMappingHandlerAdapter.java:574)- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d1dee39: startup date [Mon Aug 22 14:48:27 CST 2022]; root of context hierarchy
+2022-08-22 14:48:33,174 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-22 14:48:33,174 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-22 14:48:33,174 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-22 14:48:33,208 INFO (ExceptionHandlerExceptionResolver.java:288)- Detected @ExceptionHandler methods in commonExceptionHandler
+2022-08-22 14:48:33,278 WARN (TemplateMode.java:150)- [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-08-22 14:48:33,396 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2022-08-22 14:48:33,987 INFO (MBeanExporter.java:433)- Registering beans for JMX exposure on startup
+2022-08-22 14:48:33,988 INFO (MBeanExporter.java:895)- Bean with name 'dataSource' has been autodetected for JMX exposure
+2022-08-22 14:48:33,996 INFO (MBeanExporter.java:668)- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2022-08-22 14:48:34,000 INFO (DefaultLifecycleProcessor.java:351)- Starting beans in phase 2147483647
+2022-08-22 14:48:34,000 INFO (DocumentationPluginsBootstrapper.java:120)- Context refreshed
+2022-08-22 14:48:34,016 INFO (DocumentationPluginsBootstrapper.java:123)- Found 1 custom documentation plugin(s)
+2022-08-22 14:48:34,028 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2022-08-22 14:48:34,159 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_1
+2022-08-22 14:48:34,192 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_1
+2022-08-22 14:48:34,194 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_1
+2022-08-22 14:48:34,196 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_1
+2022-08-22 14:48:34,199 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_1
+2022-08-22 14:48:34,201 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_2
+2022-08-22 14:48:34,204 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_3
+2022-08-22 14:48:34,207 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_1
+2022-08-22 14:48:34,209 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_1
+2022-08-22 14:48:34,211 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_1
+2022-08-22 14:48:34,213 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_1
+2022-08-22 14:48:34,215 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_1
+2022-08-22 14:48:34,217 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_1
+2022-08-22 14:48:34,219 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_1
+2022-08-22 14:48:34,221 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_1
+2022-08-22 14:48:34,222 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_1
+2022-08-22 14:48:34,227 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_2
+2022-08-22 14:48:34,229 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_2
+2022-08-22 14:48:34,231 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_2
+2022-08-22 14:48:34,233 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_2
+2022-08-22 14:48:34,235 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_4
+2022-08-22 14:48:34,237 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_5
+2022-08-22 14:48:34,241 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_2
+2022-08-22 14:48:34,243 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_2
+2022-08-22 14:48:34,245 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_2
+2022-08-22 14:48:34,247 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_2
+2022-08-22 14:48:34,250 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_2
+2022-08-22 14:48:34,252 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_2
+2022-08-22 14:48:34,254 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_2
+2022-08-22 14:48:34,256 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_2
+2022-08-22 14:48:34,258 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_2
+2022-08-22 14:48:34,270 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_3
+2022-08-22 14:48:34,273 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_3
+2022-08-22 14:48:34,275 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_3
+2022-08-22 14:48:34,277 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_3
+2022-08-22 14:48:34,279 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_6
+2022-08-22 14:48:34,281 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_7
+2022-08-22 14:48:34,284 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_3
+2022-08-22 14:48:34,286 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_3
+2022-08-22 14:48:34,287 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_3
+2022-08-22 14:48:34,289 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_3
+2022-08-22 14:48:34,290 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_3
+2022-08-22 14:48:34,292 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_3
+2022-08-22 14:48:34,293 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_3
+2022-08-22 14:48:34,295 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_3
+2022-08-22 14:48:34,296 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_3
+2022-08-22 14:48:34,301 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_4
+2022-08-22 14:48:34,304 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_4
+2022-08-22 14:48:34,306 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_4
+2022-08-22 14:48:34,309 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_4
+2022-08-22 14:48:34,320 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_8
+2022-08-22 14:48:34,322 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_9
+2022-08-22 14:48:34,326 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_4
+2022-08-22 14:48:34,332 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeUsingGET_1
+2022-08-22 14:48:34,335 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_4
+2022-08-22 14:48:34,337 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_4
+2022-08-22 14:48:34,338 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_4
+2022-08-22 14:48:34,340 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_4
+2022-08-22 14:48:34,342 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_4
+2022-08-22 14:48:34,344 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_4
+2022-08-22 14:48:34,345 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_4
+2022-08-22 14:48:34,347 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_4
+2022-08-22 14:48:34,351 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_5
+2022-08-22 14:48:34,355 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_5
+2022-08-22 14:48:34,358 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_5
+2022-08-22 14:48:34,360 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_10
+2022-08-22 14:48:34,362 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_11
+2022-08-22 14:48:34,365 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_5
+2022-08-22 14:48:34,369 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeUsingGET_2
+2022-08-22 14:48:34,373 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_5
+2022-08-22 14:48:34,374 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_5
+2022-08-22 14:48:34,376 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_5
+2022-08-22 14:48:34,377 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_5
+2022-08-22 14:48:34,379 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_5
+2022-08-22 14:48:34,380 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_5
+2022-08-22 14:48:34,382 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_5
+2022-08-22 14:48:34,383 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_5
+2022-08-22 14:48:34,386 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_6
+2022-08-22 14:48:34,393 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_6
+2022-08-22 14:48:34,396 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_6
+2022-08-22 14:48:34,405 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_12
+2022-08-22 14:48:34,407 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_13
+2022-08-22 14:48:34,410 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_6
+2022-08-22 14:48:34,412 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_6
+2022-08-22 14:48:34,414 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_6
+2022-08-22 14:48:34,416 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_6
+2022-08-22 14:48:34,417 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_6
+2022-08-22 14:48:34,419 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_6
+2022-08-22 14:48:34,421 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_6
+2022-08-22 14:48:34,422 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_6
+2022-08-22 14:48:34,424 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_6
+2022-08-22 14:48:34,427 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_7
+2022-08-22 14:48:34,429 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_7
+2022-08-22 14:48:34,453 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_7
+2022-08-22 14:48:34,455 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_14
+2022-08-22 14:48:34,457 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_15
+2022-08-22 14:48:34,460 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_7
+2022-08-22 14:48:34,465 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_7
+2022-08-22 14:48:34,466 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_7
+2022-08-22 14:48:34,468 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_7
+2022-08-22 14:48:34,470 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_7
+2022-08-22 14:48:34,471 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_7
+2022-08-22 14:48:34,473 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_7
+2022-08-22 14:48:34,474 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_7
+2022-08-22 14:48:34,476 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_7
+2022-08-22 14:48:34,504 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_8
+2022-08-22 14:48:34,514 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_8
+2022-08-22 14:48:34,519 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_8
+2022-08-22 14:48:34,521 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_8
+2022-08-22 14:48:34,527 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_9
+2022-08-22 14:48:34,530 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_16
+2022-08-22 14:48:34,534 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: indexUsingGET_1
+2022-08-22 14:48:34,535 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: indexUsingGET_2
+2022-08-22 14:48:34,568 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_8
+2022-08-22 14:48:34,570 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_9
+2022-08-22 14:48:34,573 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_10
+2022-08-22 14:48:34,585 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_17
+2022-08-22 14:48:34,588 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_9
+2022-08-22 14:48:34,592 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeUsingGET_3
+2022-08-22 14:48:34,594 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeUsingGET_4
+2022-08-22 14:48:34,596 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_9
+2022-08-22 14:48:34,599 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_9
+2022-08-22 14:48:34,601 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_5
+2022-08-22 14:48:34,602 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_10
+2022-08-22 14:48:34,604 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_11
+2022-08-22 14:48:34,606 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_18
+2022-08-22 14:48:34,607 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_19
+2022-08-22 14:48:34,610 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_10
+2022-08-22 14:48:34,612 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_8
+2022-08-22 14:48:34,613 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_8
+2022-08-22 14:48:34,614 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_10
+2022-08-22 14:48:34,616 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_8
+2022-08-22 14:48:34,617 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_8
+2022-08-22 14:48:34,618 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_8
+2022-08-22 14:48:34,620 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_8
+2022-08-22 14:48:34,622 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_8
+2022-08-22 14:48:34,625 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_10
+2022-08-22 14:48:34,627 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_6
+2022-08-22 14:48:34,629 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_11
+2022-08-22 14:48:34,631 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_12
+2022-08-22 14:48:34,633 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_20
+2022-08-22 14:48:34,635 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_21
+2022-08-22 14:48:34,638 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_11
+2022-08-22 14:48:34,640 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_9
+2022-08-22 14:48:34,642 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_9
+2022-08-22 14:48:34,643 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_11
+2022-08-22 14:48:34,644 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_9
+2022-08-22 14:48:34,645 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_9
+2022-08-22 14:48:34,646 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_9
+2022-08-22 14:48:34,648 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_9
+2022-08-22 14:48:34,649 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_9
+2022-08-22 14:48:34,651 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_11
+2022-08-22 14:48:34,653 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchRemoveUsingPOST_1
+2022-08-22 14:48:34,655 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_12
+2022-08-22 14:48:34,661 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_13
+2022-08-22 14:48:34,665 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_12
+2022-08-22 14:48:34,670 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_13
+2022-08-22 14:48:34,671 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_12
+2022-08-22 14:48:34,675 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_12
+2022-08-22 14:48:34,677 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_7
+2022-08-22 14:48:34,678 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_13
+2022-08-22 14:48:34,680 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_14
+2022-08-22 14:48:34,682 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_22
+2022-08-22 14:48:34,684 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_23
+2022-08-22 14:48:34,686 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_14
+2022-08-22 14:48:34,688 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_10
+2022-08-22 14:48:34,689 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_10
+2022-08-22 14:48:34,690 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_13
+2022-08-22 14:48:34,692 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_10
+2022-08-22 14:48:34,693 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_10
+2022-08-22 14:48:34,694 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_10
+2022-08-22 14:48:34,695 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_10
+2022-08-22 14:48:34,697 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_10
+2022-08-22 14:48:34,708 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_15
+2022-08-22 14:48:34,709 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingHEAD_1
+2022-08-22 14:48:34,709 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingPOST_1
+2022-08-22 14:48:34,710 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingPUT_1
+2022-08-22 14:48:34,711 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingPATCH_1
+2022-08-22 14:48:34,722 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingDELETE_1
+2022-08-22 14:48:34,723 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingOPTIONS_1
+2022-08-22 14:48:34,724 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingTRACE_1
+2022-08-22 14:48:34,738 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_13
+2022-08-22 14:48:34,746 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchRemoveUsingPOST_2
+2022-08-22 14:48:34,749 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_14
+2022-08-22 14:48:34,753 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_16
+2022-08-22 14:48:34,758 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_24
+2022-08-22 14:48:34,765 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_15
+2022-08-22 14:48:34,767 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeUsingGET_5
+2022-08-22 14:48:34,769 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeViewUsingGET_1
+2022-08-22 14:48:34,772 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_14
+2022-08-22 14:48:34,781 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_14
+2022-08-22 14:48:34,783 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_8
+2022-08-22 14:48:34,784 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_15
+2022-08-22 14:48:34,786 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_17
+2022-08-22 14:48:34,787 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_25
+2022-08-22 14:48:34,789 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_26
+2022-08-22 14:48:34,791 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_16
+2022-08-22 14:48:34,793 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_11
+2022-08-22 14:48:34,794 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_11
+2022-08-22 14:48:34,795 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_15
+2022-08-22 14:48:34,796 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_11
+2022-08-22 14:48:34,797 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_11
+2022-08-22 14:48:34,799 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_11
+2022-08-22 14:48:34,800 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_11
+2022-08-22 14:48:34,802 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_11
+2022-08-22 14:48:34,821 INFO (DirectJDKLog.java:180)- Starting ProtocolHandler ["http-nio-80"]
+2022-08-22 14:48:34,831 INFO (DirectJDKLog.java:180)- Using a shared selector for servlet write/read
+2022-08-22 14:48:34,842 INFO (TomcatWebServer.java:206)- Tomcat started on port(s): 80 (http) with context path ''
+2022-08-22 14:48:34,845 INFO (StartupInfoLogger.java:59)- Started AdminApplication in 7.908 seconds (JVM running for 12.776)
+2022-08-22 14:48:34,850 INFO (AdminApplication.java:36)- 项目启动啦，访问路径：http://192.168.31.136:80
+2022-08-22 14:48:39,238 INFO (DirectJDKLog.java:180)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-08-22 14:48:39,238 INFO (FrameworkServlet.java:494)- FrameworkServlet 'dispatcherServlet': initialization started
+2022-08-22 14:48:39,261 INFO (FrameworkServlet.java:509)- FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2022-08-22 14:48:39,279 INFO (AbstractValidatingSessionManager.java:233)- Enabling session validation scheduler...
+2022-08-22 14:48:39,328 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/login
+2022-08-22 14:48:39,329 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-22 14:48:39,330 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.system.controller.LoginController.login
+2022-08-22 14:48:39,330 INFO (WebLogAspect.java:43)- 参数 : [{}]
+2022-08-22 14:48:39,331 INFO (WebLogAspect.java:58)- 耗时 : 3
+2022-08-22 14:48:39,331 DEBUG (WebLogAspect.java:51)- 返回值 : login
+2022-08-22 14:48:39,768 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/getVerify
+2022-08-22 14:48:39,769 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-22 14:48:39,769 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.system.controller.LoginController.getVerify
+2022-08-22 14:48:39,769 INFO (WebLogAspect.java:43)- 参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@56990234, org.apache.shiro.web.servlet.ShiroHttpServletResponse@585ee697]
+2022-08-22 14:48:41,703 INFO (RandomValidateCodeUtil.java:76)- 0039
+2022-08-22 14:48:41,770 INFO (WebLogAspect.java:58)- 耗时 : 2002
+2022-08-22 14:48:41,770 DEBUG (WebLogAspect.java:51)- 返回值 : null
+2022-08-22 14:48:41,800 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/login
+2022-08-22 14:48:41,800 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-22 14:48:41,801 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.system.controller.LoginController.login
+2022-08-22 14:48:41,801 INFO (WebLogAspect.java:43)- 参数 : [{}]
+2022-08-22 14:48:41,801 INFO (WebLogAspect.java:58)- 耗时 : 1
+2022-08-22 14:48:41,801 DEBUG (WebLogAspect.java:51)- 返回值 : login
+2022-08-22 14:48:58,253 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/login
+2022-08-22 14:48:58,253 INFO (WebLogAspect.java:38)- HTTP METHOD : POST
+2022-08-22 14:48:58,254 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.system.controller.LoginController.ajaxLogin
+2022-08-22 14:48:58,254 INFO (WebLogAspect.java:43)- 参数 : [admin, admin, 0039, org.apache.shiro.web.servlet.ShiroHttpServletRequest@2007beeb]
+2022-08-22 14:48:58,294 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2022-08-22 14:48:58,318 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2022-08-22 14:48:58,354 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:48:58,359 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select group_concat(dept_id) from sys_dept where parent_id = ? 
+2022-08-22 14:48:58,360 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 14(Long)
+2022-08-22 14:48:58,369 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:48:58,371 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select distinct t1.`table_name`,t1.`module_name`,t1.`crl_attr_name`,t1.`crl_column_name`,t1.`perm_code` from sys_data_perm t1 inner join sys_role_data_perm t2 on t1.id = t2.perm_id inner join sys_user_role t3 on t2.role_id = t3.role_id and t3.user_id = ? 
+2022-08-22 14:48:58,371 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2022-08-22 14:48:58,408 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2022-08-22 14:48:58,411 INFO (WebLogAspect.java:58)- 耗时 : 158
+2022-08-22 14:48:58,411 DEBUG (WebLogAspect.java:51)- 返回值 : {msg=操作成功, code=0}
+2022-08-22 14:48:58,449 INFO (AsyncExecutionAspectSupport.java:248)- No task executor bean found for async processing: no bean of type TaskExecutor and no bean named 'taskExecutor' either
+2022-08-22 14:48:58,450 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-08-22 14:48:58,454 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long), admin(String), 登录(String), 158(Integer), com.java2nb.system.controller.LoginController.ajaxLogin()(String), null, 192.168.31.136(String), 2022-08-22 14:48:58.448(Timestamp)
+2022-08-22 14:48:58,465 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-08-22 14:48:58,487 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/index
+2022-08-22 14:48:58,488 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-22 14:48:58,488 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.system.controller.LoginController.index
+2022-08-22 14:48:58,488 INFO (WebLogAspect.java:43)- 参数 : [{}]
+2022-08-22 14:48:58,500 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2022-08-22 14:48:58,500 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2022-08-22 14:48:58,520 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 23
+2022-08-22 14:48:58,525 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2022-08-22 14:48:58,526 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 148(Long)
+2022-08-22 14:48:58,533 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:48:58,534 INFO (WebLogAspect.java:58)- 耗时 : 47
+2022-08-22 14:48:58,534 DEBUG (WebLogAspect.java:51)- 返回值 : index
+2022-08-22 14:48:58,552 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-08-22 14:48:58,552 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long), admin(String), 请求访问主页(String), 48(Integer), com.java2nb.system.controller.LoginController.index()(String), null, 192.168.31.136(String), 2022-08-22 14:48:58.551(Timestamp)
+2022-08-22 14:48:58,556 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-08-22 14:48:58,778 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/main
+2022-08-22 14:48:58,779 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-22 14:48:58,779 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.system.controller.LoginController.main
+2022-08-22 14:48:58,779 INFO (WebLogAspect.java:43)- 参数 : []
+2022-08-22 14:48:58,780 INFO (WebLogAspect.java:58)- 耗时 : 2
+2022-08-22 14:48:58,780 DEBUG (WebLogAspect.java:51)- 返回值 : main
+2022-08-22 14:48:58,984 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2022-08-22 14:48:58,985 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2022-08-22 14:48:58,985 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/main
+2022-08-22 14:48:58,986 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-22 14:48:58,986 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.system.controller.LoginController.main
+2022-08-22 14:48:58,986 INFO (WebLogAspect.java:43)- 参数 : []
+2022-08-22 14:48:58,986 INFO (WebLogAspect.java:58)- 耗时 : 1
+2022-08-22 14:48:58,986 DEBUG (WebLogAspect.java:51)- 返回值 : main
+2022-08-22 14:48:58,990 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 70
+2022-08-22 14:48:59,000 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/common/dict/list
+2022-08-22 14:48:59,000 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-22 14:48:59,001 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.common.controller.DictController.list
+2022-08-22 14:48:59,001 INFO (WebLogAspect.java:43)- 参数 : [{limit=1000, offset=0}]
+2022-08-22 14:48:59,009 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict order by id desc limit ?, ? 
+2022-08-22 14:48:59,010 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer), 1000(Integer)
+2022-08-22 14:48:59,050 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 130
+2022-08-22 14:48:59,052 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(*) from sys_dict 
+2022-08-22 14:48:59,052 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-08-22 14:48:59,061 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:48:59,062 INFO (WebLogAspect.java:58)- 耗时 : 62
+2022-08-22 14:48:59,062 DEBUG (WebLogAspect.java:51)- 返回值 : com.java2nb.common.utils.PageBean@59278b87
+2022-08-22 14:48:59,193 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/novel/stat/countSta
+2022-08-22 14:48:59,193 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-22 14:48:59,193 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.novel.controller.StatController.countUser
+2022-08-22 14:48:59,194 INFO (WebLogAspect.java:43)- 参数 : []
+2022-08-22 14:48:59,196 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(*) from user 
+2022-08-22 14:48:59,197 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-08-22 14:48:59,230 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:48:59,232 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(*) from author 
+2022-08-22 14:48:59,232 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-08-22 14:48:59,273 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/novel/stat/tableSta
+2022-08-22 14:48:59,273 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-22 14:48:59,273 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.novel.controller.StatController.tableSta
+2022-08-22 14:48:59,273 INFO (WebLogAspect.java:43)- 参数 : []
+2022-08-22 14:48:59,286 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT DATE_FORMAT( create_time, "%Y-%m-%d" ) AS staDate, COUNT( 1 ) userCount FROM user WHERE create_time >= ? GROUP BY DATE_FORMAT( create_time, "%Y-%m-%d" ) ORDER BY staDate 
+2022-08-22 14:48:59,286 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022-08-16 00:00:00.0(Timestamp)
+2022-08-22 14:49:00,020 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:49:00,021 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:49:00,023 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT DATE_FORMAT( create_time, "%Y-%m-%d" ) AS staDate, COUNT( 1 ) bookCount FROM book WHERE create_time >= ? GROUP BY DATE_FORMAT( create_time, "%Y-%m-%d" ) ORDER BY staDate 
+2022-08-22 14:49:00,023 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022-08-16 00:00:00.0(Timestamp)
+2022-08-22 14:49:00,026 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(*) from book 
+2022-08-22 14:49:00,027 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-08-22 14:49:00,037 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:49:00,038 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:49:00,039 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT DATE_FORMAT( create_time, "%Y-%m-%d" ) AS staDate, COUNT( 1 ) authorCount FROM author WHERE create_time >= ? GROUP BY DATE_FORMAT( create_time, "%Y-%m-%d" ) ORDER BY staDate 
+2022-08-22 14:49:00,040 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022-08-16 00:00:00.0(Timestamp)
+2022-08-22 14:49:00,040 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select count(*) from order_pay 
+2022-08-22 14:49:00,040 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-08-22 14:49:00,042 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:49:00,044 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT DATE_FORMAT( create_time, "%Y-%m-%d" ) AS staDate, COUNT( 1 ) orderCount FROM order_pay WHERE create_time >= ? GROUP BY DATE_FORMAT( create_time, "%Y-%m-%d" ) ORDER BY staDate 
+2022-08-22 14:49:00,045 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022-08-16 00:00:00.0(Timestamp)
+2022-08-22 14:49:00,051 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:49:00,052 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-08-22 14:49:00,053 INFO (WebLogAspect.java:58)- 耗时 : 780
+2022-08-22 14:49:00,053 DEBUG (WebLogAspect.java:51)- 返回值 : {msg=操作成功, authorTableSta={2022-08-22=1}, code=0, bookTableSta={2022-08-22=1}, userTableSta={2022-08-22=2}, dateList=[2022-08-16, 2022-08-17, 2022-08-18, 2022-08-19, 2022-08-20, 2022-08-21, 2022-08-22], orderTableSta={2022-08-22=1}}
+2022-08-22 14:49:00,053 INFO (WebLogAspect.java:58)- 耗时 : 860
+2022-08-22 14:49:00,053 DEBUG (WebLogAspect.java:51)- 返回值 : {msg=操作成功, authorCount=3, code=0, userCount=9, bookCount=1, orderCount=1}
+2022-08-22 15:03:40,482 INFO (AbstractApplicationContext.java:993)- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d1dee39: startup date [Mon Aug 22 14:48:27 CST 2022]; root of context hierarchy
+2022-08-22 15:03:40,485 INFO (DefaultLifecycleProcessor.java:366)- Stopping beans in phase 2147483647
+2022-08-22 15:03:40,486 INFO (MBeanExporter.java:451)- Unregistering JMX-exposed beans on shutdown
+2022-08-22 15:03:40,486 INFO (MBeanRegistrationSupport.java:183)- Unregistering JMX-exposed beans
+2022-08-22 15:03:40,508 INFO (Log4j2Impl.java:106)- {dataSource-1} closed
+2022-08-22 15:03:40,509 INFO (AbstractValidatingSessionManager.java:250)- Disabled session validation scheduler.

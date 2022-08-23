@@ -1,0 +1,477 @@
+2022-08-23 00:00:45,670 INFO (StartupInfoLogger.java:50)- Starting AdminApplication on C02ZX2CNMD6R with PID 70908 (/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/novel-admin/target/classes started by i532064 in /System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus)
+2022-08-23 00:00:45,676 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2022-08-23 00:00:45,677 INFO (SpringApplication.java:663)- The following profiles are active: dev
+2022-08-23 00:00:45,717 INFO (AbstractApplicationContext.java:590)- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d1dee39: startup date [Tue Aug 23 00:00:45 CST 2022]; root of context hierarchy
+2022-08-23 00:00:46,619 INFO (RepositoryConfigurationDelegate.java:163)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-23 00:00:46,871 INFO (DefaultListableBeanFactory.java:824)- Overriding bean definition for bean 'xssFilter' with a different definition: replacing [Generic bean: class [com.java2nb.common.xss.XssFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/novel-admin/target/classes/com/java2nb/common/xss/XssFilter.class]] with [Root bean: class [org.springframework.boot.web.servlet.FilterRegistrationBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2022-08-23 00:00:47,013 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$24737454] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,119 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$18e738f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,135 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,143 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,152 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,155 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$b38605f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,163 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db613e36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,208 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'shiroConfig' of type [com.java2nb.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$c8f7d30e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,415 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheManager2' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,432 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,435 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,591 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'userRealm' of type [com.java2nb.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,616 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,618 INFO (EhCacheManager.java:158)- Cache with name 'com.java2nb.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2022-08-23 00:00:47,626 WARN (DiskStorePathManager.java:162)- diskStorePath '/System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/cachedata' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to /System/Volumes/Data/SAPDevelop/demo/novel-plus/novel-plus/cachedata/ehcache_auto_created7935142557045922006diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2022-08-23 00:00:47,644 INFO (EhCacheManager.java:165)- Added EhCache named [com.java2nb.system.shiro.UserRealm.authorizationCache]
+2022-08-23 00:00:47,647 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,656 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,682 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,719 INFO (PostProcessorRegistrationDelegate.java:328)- Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-23 00:00:47,999 INFO (TomcatWebServer.java:91)- Tomcat initialized with port(s): 80 (http)
+2022-08-23 00:00:48,009 INFO (DirectJDKLog.java:180)- Initializing ProtocolHandler ["http-nio-80"]
+2022-08-23 00:00:48,015 INFO (DirectJDKLog.java:180)- Starting service [Tomcat]
+2022-08-23 00:00:48,015 INFO (DirectJDKLog.java:180)- Starting Servlet Engine: Apache Tomcat/8.5.29
+2022-08-23 00:00:48,019 INFO (DirectJDKLog.java:180)- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/i532064/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2022-08-23 00:00:48,099 INFO (DirectJDKLog.java:180)- Initializing Spring embedded WebApplicationContext
+2022-08-23 00:00:48,100 INFO (ServletWebServerApplicationContext.java:285)- Root WebApplicationContext: initialization completed in 2383 ms
+2022-08-23 00:00:48,348 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-08-23 00:00:48,349 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-08-23 00:00:48,349 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-08-23 00:00:48,349 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'requestContextFilter' to: [/*]
+2022-08-23 00:00:48,349 INFO (AbstractFilterRegistrationBean.java:257)- Mapping filter: 'xssFilter' to urls: [/*]
+2022-08-23 00:00:48,349 INFO (AbstractFilterRegistrationBean.java:257)- Mapping filter: 'webStatFilter' to urls: [/*]
+2022-08-23 00:00:48,350 INFO (AbstractFilterRegistrationBean.java:244)- Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2022-08-23 00:00:48,350 INFO (ServletRegistrationBean.java:185)- Servlet statViewServlet mapped to [/druid/*]
+2022-08-23 00:00:48,351 INFO (ServletRegistrationBean.java:185)- Servlet dispatcherServlet mapped to [/]
+2022-08-23 00:00:48,590 INFO (Log4j2Impl.java:106)- {dataSource-1} inited
+2022-08-23 00:00:49,031 DEBUG (ApplicationContextRegister.java:29)- ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d1dee39: startup date [Tue Aug 23 00:00:45 CST 2022]; root of context hierarchy
+2022-08-23 00:00:50,493 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.DictController.dict()
+2022-08-23 00:00:50,495 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/list],methods=[GET]}" onto public com.java2nb.common.utils.PageBean com.java2nb.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,496 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.DictController.add()
+2022-08-23 00:00:50,496 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,496 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.DictController.save(com.java2nb.common.domain.DictDO)
+2022-08-23 00:00:50,497 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/update]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.DictController.update(com.java2nb.common.domain.DictDO)
+2022-08-23 00:00:50,497 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.DictController.remove(java.lang.Long)
+2022-08-23 00:00:50,497 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.DictController.remove(java.lang.Long[])
+2022-08-23 00:00:50,498 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.java2nb.common.domain.DictDO> com.java2nb.common.controller.DictController.listType()
+2022-08-23 00:00:50,498 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2022-08-23 00:00:50,498 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.java2nb.common.domain.DictDO> com.java2nb.common.controller.DictController.listByType(java.lang.String)
+2022-08-23 00:00:50,501 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2022-08-23 00:00:50,501 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.java2nb.common.utils.PageBean com.java2nb.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,501 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.FileController.add()
+2022-08-23 00:00:50,502 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,502 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/info/{id}]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.FileController.info(java.lang.Long)
+2022-08-23 00:00:50,502 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.FileController.save(com.java2nb.common.domain.FileDO)
+2022-08-23 00:00:50,503 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/update]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.FileController.update(com.java2nb.common.domain.FileDO)
+2022-08-23 00:00:50,503 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2022-08-23 00:00:50,503 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.FileController.remove(java.lang.Long[])
+2022-08-23 00:00:50,504 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2022-08-23 00:00:50,504 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/sysFile/download]}" onto public void com.java2nb.common.controller.FileController.fileDownload(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2022-08-23 00:00:50,508 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.GeneratorController.generator()
+2022-08-23 00:00:50,508 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.java2nb.common.controller.GeneratorController.list(java.lang.String)
+2022-08-23 00:00:50,508 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/downLoadCode/{tableName}]}" onto public void com.java2nb.common.controller.GeneratorController.downLoadCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2022-08-23 00:00:50,509 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/genCode],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.GeneratorController.genCode(java.lang.String)
+2022-08-23 00:00:50,509 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/batchDownload]}" onto public void com.java2nb.common.controller.GeneratorController.batchDownload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2022-08-23 00:00:50,509 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/batchCode],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.GeneratorController.batchCode(java.lang.String)
+2022-08-23 00:00:50,510 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.java2nb.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2022-08-23 00:00:50,510 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/update],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,510 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/genColumns],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.GeneratorController.genColumns(java.lang.String,org.springframework.ui.Model)
+2022-08-23 00:00:50,511 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/genColumns/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.GeneratorController.genColumnsList(java.lang.String)
+2022-08-23 00:00:50,511 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/generator/genColumns/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.common.controller.GeneratorController.save(java.util.List<com.java2nb.common.domain.GenColumnsDO>)
+2022-08-23 00:00:50,512 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.java2nb.common.controller.LogController.log()
+2022-08-23 00:00:50,512 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/log/list],methods=[GET]}" onto com.java2nb.common.domain.PageDO<com.java2nb.common.domain.LogDO> com.java2nb.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,513 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/log/remove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.common.controller.LogController.remove(java.lang.Long)
+2022-08-23 00:00:50,513 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.common.controller.LogController.batchRemove(java.lang.Long[])
+2022-08-23 00:00:50,514 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.java2nb.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-08-23 00:00:50,514 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/error]}" onto public com.java2nb.common.utils.R com.java2nb.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-08-23 00:00:50,517 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorCodeController.AuthorCode()
+2022-08-23 00:00:50,518 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorCodeController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,518 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorCodeController.add()
+2022-08-23 00:00:50,518 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorCodeController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,519 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorCodeController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,519 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorCodeController.save(com.java2nb.novel.domain.AuthorCodeDO)
+2022-08-23 00:00:50,519 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorCodeController.update(com.java2nb.novel.domain.AuthorCodeDO)
+2022-08-23 00:00:50,520 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorCodeController.remove(java.lang.Long)
+2022-08-23 00:00:50,520 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/authorCode/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorCodeController.remove(java.lang.Long[])
+2022-08-23 00:00:50,522 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorController.Author()
+2022-08-23 00:00:50,522 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,523 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorController.add()
+2022-08-23 00:00:50,523 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,523 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.AuthorController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,524 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorController.save(com.java2nb.novel.domain.AuthorDO)
+2022-08-23 00:00:50,524 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorController.update(com.java2nb.novel.domain.AuthorDO)
+2022-08-23 00:00:50,524 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorController.remove(java.lang.Long)
+2022-08-23 00:00:50,525 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/author/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.AuthorController.remove(java.lang.Long[])
+2022-08-23 00:00:50,526 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.BookController.Book()
+2022-08-23 00:00:50,527 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.BookController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,527 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.BookController.add()
+2022-08-23 00:00:50,527 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.BookController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,528 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.BookController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,528 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.BookController.save(com.java2nb.novel.domain.BookDO)
+2022-08-23 00:00:50,528 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.BookController.update(com.java2nb.novel.domain.BookDO)
+2022-08-23 00:00:50,528 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.BookController.remove(java.lang.Long)
+2022-08-23 00:00:50,529 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/book/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.BookController.remove(java.lang.Long[])
+2022-08-23 00:00:50,531 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.CategoryController.Category()
+2022-08-23 00:00:50,531 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.CategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,531 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.CategoryController.add()
+2022-08-23 00:00:50,531 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.CategoryController.edit(java.lang.Integer,org.springframework.ui.Model)
+2022-08-23 00:00:50,532 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.CategoryController.detail(java.lang.Integer,org.springframework.ui.Model)
+2022-08-23 00:00:50,532 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.CategoryController.save(com.java2nb.novel.domain.CategoryDO)
+2022-08-23 00:00:50,532 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.CategoryController.update(com.java2nb.novel.domain.CategoryDO)
+2022-08-23 00:00:50,533 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.CategoryController.remove(java.lang.Integer)
+2022-08-23 00:00:50,533 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/category/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.CategoryController.remove(java.lang.Integer[])
+2022-08-23 00:00:50,534 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.NewsController.News()
+2022-08-23 00:00:50,535 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.NewsController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,535 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.NewsController.add()
+2022-08-23 00:00:50,535 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.NewsController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,536 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.NewsController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,536 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.NewsController.save(com.java2nb.novel.domain.NewsDO)
+2022-08-23 00:00:50,536 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.NewsController.update(com.java2nb.novel.domain.NewsDO)
+2022-08-23 00:00:50,537 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.NewsController.remove(java.lang.Long)
+2022-08-23 00:00:50,537 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/news/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.NewsController.remove(java.lang.Long[])
+2022-08-23 00:00:50,539 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.PayController.Pay()
+2022-08-23 00:00:50,539 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.PayController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,540 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.PayController.add()
+2022-08-23 00:00:50,540 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.PayController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,540 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.PayController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,540 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.PayController.save(com.java2nb.novel.domain.PayDO)
+2022-08-23 00:00:50,541 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.PayController.update(com.java2nb.novel.domain.PayDO)
+2022-08-23 00:00:50,541 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.PayController.remove(java.lang.Long)
+2022-08-23 00:00:50,541 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/pay/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.PayController.remove(java.lang.Long[])
+2022-08-23 00:00:50,542 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/stat/countSta],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.StatController.countUser()
+2022-08-23 00:00:50,542 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/stat/tableSta],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.StatController.tableSta()
+2022-08-23 00:00:50,544 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.UserController.User()
+2022-08-23 00:00:50,544 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,545 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/add],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.UserController.add()
+2022-08-23 00:00:50,545 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.UserController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,545 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.novel.controller.UserController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,545 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.UserController.save(com.java2nb.novel.domain.UserDO)
+2022-08-23 00:00:50,546 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/update]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.UserController.update(com.java2nb.novel.domain.UserDO)
+2022-08-23 00:00:50,546 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.UserController.remove(java.lang.Long)
+2022-08-23 00:00:50,546 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/novel/user/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.novel.controller.UserController.remove(java.lang.Long[])
+2022-08-23 00:00:50,549 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DataPermController.DataPerm()
+2022-08-23 00:00:50,549 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DataPermController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,550 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/add],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DataPermController.add()
+2022-08-23 00:00:50,550 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DataPermController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,551 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DataPermController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,551 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DataPermController.save(com.java2nb.system.domain.DataPermDO)
+2022-08-23 00:00:50,551 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/update]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DataPermController.update(com.java2nb.system.domain.DataPermDO)
+2022-08-23 00:00:50,551 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DataPermController.remove(java.lang.Long)
+2022-08-23 00:00:50,552 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DataPermController.remove(java.lang.Long[])
+2022-08-23 00:00:50,552 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/moduleName],methods=[GET]}" onto public java.util.List<com.java2nb.system.domain.DataPermDO> com.java2nb.system.controller.DataPermController.listModuleName()
+2022-08-23 00:00:50,553 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/tree],methods=[GET]}" onto com.java2nb.common.domain.Tree<com.java2nb.system.domain.DataPermDO> com.java2nb.system.controller.DataPermController.tree()
+2022-08-23 00:00:50,553 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/dataPerm/tree/{roleId}],methods=[GET]}" onto com.java2nb.common.domain.Tree<com.java2nb.system.domain.DataPermDO> com.java2nb.system.controller.DataPermController.tree(java.lang.Long)
+2022-08-23 00:00:50,554 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DeptController.dept()
+2022-08-23 00:00:50,555 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.java2nb.system.domain.DeptDO> com.java2nb.system.controller.DeptController.list()
+2022-08-23 00:00:50,555 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,555 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,556 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DeptController.save(com.java2nb.system.domain.DeptDO)
+2022-08-23 00:00:50,556 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/update]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DeptController.update(com.java2nb.system.domain.DeptDO)
+2022-08-23 00:00:50,556 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DeptController.remove(java.lang.Long)
+2022-08-23 00:00:50,556 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.DeptController.remove(java.lang.Long[])
+2022-08-23 00:00:50,557 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.java2nb.common.domain.Tree<com.java2nb.system.domain.DeptDO> com.java2nb.system.controller.DeptController.tree()
+2022-08-23 00:00:50,557 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.DeptController.treeView()
+2022-08-23 00:00:50,558 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[ || / || /index],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.LoginController.index(org.springframework.ui.Model)
+2022-08-23 00:00:50,558 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/login],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.LoginController.login(org.springframework.ui.Model)
+2022-08-23 00:00:50,558 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/login],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-08-23 00:00:50,559 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.LoginController.logout()
+2022-08-23 00:00:50,559 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/main],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.LoginController.main()
+2022-08-23 00:00:50,559 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/getVerify],methods=[GET]}" onto public void com.java2nb.system.controller.LoginController.getVerify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-08-23 00:00:50,561 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.MenuController.menu(org.springframework.ui.Model)
+2022-08-23 00:00:50,562 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/list]}" onto java.util.List<com.java2nb.system.domain.MenuDO> com.java2nb.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,562 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2022-08-23 00:00:50,562 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2022-08-23 00:00:50,563 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/save],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.MenuController.save(com.java2nb.system.domain.MenuDO)
+2022-08-23 00:00:50,563 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/update],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.MenuController.update(com.java2nb.system.domain.MenuDO)
+2022-08-23 00:00:50,563 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.MenuController.remove(java.lang.Long)
+2022-08-23 00:00:50,563 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.java2nb.common.domain.Tree<com.java2nb.system.domain.MenuDO> com.java2nb.system.controller.MenuController.tree()
+2022-08-23 00:00:50,564 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.java2nb.common.domain.Tree<com.java2nb.system.domain.MenuDO> com.java2nb.system.controller.MenuController.tree(java.lang.Long)
+2022-08-23 00:00:50,565 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleController.role()
+2022-08-23 00:00:50,565 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.java2nb.system.domain.RoleDO> com.java2nb.system.controller.RoleController.list()
+2022-08-23 00:00:50,565 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleController.add()
+2022-08-23 00:00:50,566 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,566 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/save],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.RoleController.save(com.java2nb.system.domain.RoleDO)
+2022-08-23 00:00:50,566 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/update],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.RoleController.update(com.java2nb.system.domain.RoleDO)
+2022-08-23 00:00:50,566 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/remove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.RoleController.save(java.lang.Long)
+2022-08-23 00:00:50,567 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.RoleController.batchRemove(java.lang.Long[])
+2022-08-23 00:00:50,569 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleDataPermController.RoleDataPerm()
+2022-08-23 00:00:50,569 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/list],methods=[GET]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.RoleDataPermController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,569 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/add],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleDataPermController.add()
+2022-08-23 00:00:50,570 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleDataPermController.edit(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,570 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/detail/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.RoleDataPermController.detail(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,570 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/save],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.RoleDataPermController.save(com.java2nb.system.domain.RoleDataPermDO)
+2022-08-23 00:00:50,570 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/update]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.RoleDataPermController.update(com.java2nb.system.domain.RoleDataPermDO)
+2022-08-23 00:00:50,571 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/remove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.RoleDataPermController.remove(java.lang.Long)
+2022-08-23 00:00:50,571 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/system/roleDataPerm/batchRemove],methods=[POST]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.RoleDataPermController.remove(java.lang.Long[])
+2022-08-23 00:00:50,571 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.java2nb.system.controller.SessionController.online()
+2022-08-23 00:00:50,572 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/online/list]}" onto public java.util.List<com.java2nb.system.domain.UserOnline> com.java2nb.system.controller.SessionController.list()
+2022-08-23 00:00:50,572 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.java2nb.common.utils.R com.java2nb.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2022-08-23 00:00:50,572 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.java2nb.system.controller.SessionController.sessionList()
+2022-08-23 00:00:50,574 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.user(org.springframework.ui.Model)
+2022-08-23 00:00:50,575 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/list],methods=[GET]}" onto com.java2nb.common.utils.PageBean com.java2nb.system.controller.SysUserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,575 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.add(org.springframework.ui.Model)
+2022-08-23 00:00:50,575 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.edit(org.springframework.ui.Model,java.lang.Long)
+2022-08-23 00:00:50,575 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/save],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.save(com.java2nb.system.domain.UserDO)
+2022-08-23 00:00:50,576 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/update],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.update(com.java2nb.system.domain.UserDO)
+2022-08-23 00:00:50,576 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.updatePeronal(com.java2nb.system.domain.UserDO)
+2022-08-23 00:00:50,577 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/remove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.remove(java.lang.Long)
+2022-08-23 00:00:50,577 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.batchRemove(java.lang.Long[])
+2022-08-23 00:00:50,577 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.java2nb.system.controller.SysUserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2022-08-23 00:00:50,577 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2022-08-23 00:00:50,578 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.resetPwd(com.java2nb.system.vo.UserVO)
+2022-08-23 00:00:50,578 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.adminResetPwd(com.java2nb.system.vo.UserVO)
+2022-08-23 00:00:50,578 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.java2nb.common.domain.Tree<com.java2nb.system.domain.DeptDO> com.java2nb.system.controller.SysUserController.tree()
+2022-08-23 00:00:50,579 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.treeView()
+2022-08-23 00:00:50,579 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.java2nb.system.controller.SysUserController.personal(org.springframework.ui.Model)
+2022-08-23 00:00:50,579 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.java2nb.common.utils.R com.java2nb.system.controller.SysUserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-08-23 00:00:50,580 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-08-23 00:00:50,582 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2022-08-23 00:00:50,583 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2022-08-23 00:00:50,583 INFO (AbstractHandlerMethodMapping.java:547)- Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2022-08-23 00:00:50,921 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-23 00:00:51,047 INFO (RequestMappingHandlerAdapter.java:574)- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d1dee39: startup date [Tue Aug 23 00:00:45 CST 2022]; root of context hierarchy
+2022-08-23 00:00:51,163 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-23 00:00:51,163 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-23 00:00:51,164 INFO (AbstractUrlHandlerMapping.java:373)- Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-08-23 00:00:51,197 INFO (ExceptionHandlerExceptionResolver.java:288)- Detected @ExceptionHandler methods in commonExceptionHandler
+2022-08-23 00:00:51,269 WARN (TemplateMode.java:150)- [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-08-23 00:00:51,368 INFO (WelcomePageHandlerMapping.java:61)- Adding welcome page template: index
+2022-08-23 00:00:51,970 INFO (MBeanExporter.java:433)- Registering beans for JMX exposure on startup
+2022-08-23 00:00:51,971 INFO (MBeanExporter.java:895)- Bean with name 'dataSource' has been autodetected for JMX exposure
+2022-08-23 00:00:51,978 INFO (MBeanExporter.java:668)- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2022-08-23 00:00:51,983 INFO (DefaultLifecycleProcessor.java:351)- Starting beans in phase 2147483647
+2022-08-23 00:00:51,983 INFO (DocumentationPluginsBootstrapper.java:120)- Context refreshed
+2022-08-23 00:00:51,992 INFO (DocumentationPluginsBootstrapper.java:123)- Found 1 custom documentation plugin(s)
+2022-08-23 00:00:52,003 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2022-08-23 00:00:52,113 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_1
+2022-08-23 00:00:52,146 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_1
+2022-08-23 00:00:52,149 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_1
+2022-08-23 00:00:52,151 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_1
+2022-08-23 00:00:52,154 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_1
+2022-08-23 00:00:52,156 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_2
+2022-08-23 00:00:52,159 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_3
+2022-08-23 00:00:52,162 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_1
+2022-08-23 00:00:52,164 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_1
+2022-08-23 00:00:52,166 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_1
+2022-08-23 00:00:52,168 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_1
+2022-08-23 00:00:52,170 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_1
+2022-08-23 00:00:52,172 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_1
+2022-08-23 00:00:52,174 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_1
+2022-08-23 00:00:52,177 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_1
+2022-08-23 00:00:52,179 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_1
+2022-08-23 00:00:52,184 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_2
+2022-08-23 00:00:52,186 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_2
+2022-08-23 00:00:52,188 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_2
+2022-08-23 00:00:52,190 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_2
+2022-08-23 00:00:52,193 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_4
+2022-08-23 00:00:52,195 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_5
+2022-08-23 00:00:52,198 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_2
+2022-08-23 00:00:52,201 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_2
+2022-08-23 00:00:52,203 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_2
+2022-08-23 00:00:52,206 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_2
+2022-08-23 00:00:52,209 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_2
+2022-08-23 00:00:52,210 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_2
+2022-08-23 00:00:52,212 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_2
+2022-08-23 00:00:52,214 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_2
+2022-08-23 00:00:52,217 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_2
+2022-08-23 00:00:52,221 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_3
+2022-08-23 00:00:52,224 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_3
+2022-08-23 00:00:52,226 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_3
+2022-08-23 00:00:52,229 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_3
+2022-08-23 00:00:52,231 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_6
+2022-08-23 00:00:52,233 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_7
+2022-08-23 00:00:52,235 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_3
+2022-08-23 00:00:52,237 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_3
+2022-08-23 00:00:52,239 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_3
+2022-08-23 00:00:52,240 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_3
+2022-08-23 00:00:52,242 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_3
+2022-08-23 00:00:52,243 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_3
+2022-08-23 00:00:52,244 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_3
+2022-08-23 00:00:52,246 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_3
+2022-08-23 00:00:52,247 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_3
+2022-08-23 00:00:52,252 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_4
+2022-08-23 00:00:52,255 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_4
+2022-08-23 00:00:52,257 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_4
+2022-08-23 00:00:52,260 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_4
+2022-08-23 00:00:52,270 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_8
+2022-08-23 00:00:52,272 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_9
+2022-08-23 00:00:52,276 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_4
+2022-08-23 00:00:52,284 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeUsingGET_1
+2022-08-23 00:00:52,286 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_4
+2022-08-23 00:00:52,288 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_4
+2022-08-23 00:00:52,290 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_4
+2022-08-23 00:00:52,292 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_4
+2022-08-23 00:00:52,293 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_4
+2022-08-23 00:00:52,295 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_4
+2022-08-23 00:00:52,297 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_4
+2022-08-23 00:00:52,299 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_4
+2022-08-23 00:00:52,303 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_5
+2022-08-23 00:00:52,307 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_5
+2022-08-23 00:00:52,310 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_5
+2022-08-23 00:00:52,311 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_10
+2022-08-23 00:00:52,313 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_11
+2022-08-23 00:00:52,316 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_5
+2022-08-23 00:00:52,320 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeUsingGET_2
+2022-08-23 00:00:52,323 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_5
+2022-08-23 00:00:52,324 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_5
+2022-08-23 00:00:52,326 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_5
+2022-08-23 00:00:52,327 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_5
+2022-08-23 00:00:52,328 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_5
+2022-08-23 00:00:52,330 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_5
+2022-08-23 00:00:52,331 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_5
+2022-08-23 00:00:52,333 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_5
+2022-08-23 00:00:52,336 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_6
+2022-08-23 00:00:52,343 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_6
+2022-08-23 00:00:52,346 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_6
+2022-08-23 00:00:52,354 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_12
+2022-08-23 00:00:52,356 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_13
+2022-08-23 00:00:52,360 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_6
+2022-08-23 00:00:52,362 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_6
+2022-08-23 00:00:52,364 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_6
+2022-08-23 00:00:52,365 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_6
+2022-08-23 00:00:52,367 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_6
+2022-08-23 00:00:52,368 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_6
+2022-08-23 00:00:52,370 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_6
+2022-08-23 00:00:52,372 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_6
+2022-08-23 00:00:52,374 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_6
+2022-08-23 00:00:52,376 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_7
+2022-08-23 00:00:52,379 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_7
+2022-08-23 00:00:52,403 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_7
+2022-08-23 00:00:52,405 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_14
+2022-08-23 00:00:52,408 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_15
+2022-08-23 00:00:52,410 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_7
+2022-08-23 00:00:52,418 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_7
+2022-08-23 00:00:52,420 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_7
+2022-08-23 00:00:52,422 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_7
+2022-08-23 00:00:52,424 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_7
+2022-08-23 00:00:52,426 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_7
+2022-08-23 00:00:52,427 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_7
+2022-08-23 00:00:52,429 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_7
+2022-08-23 00:00:52,430 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_7
+2022-08-23 00:00:52,459 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_8
+2022-08-23 00:00:52,469 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_8
+2022-08-23 00:00:52,473 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_8
+2022-08-23 00:00:52,475 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_8
+2022-08-23 00:00:52,482 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_9
+2022-08-23 00:00:52,484 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_16
+2022-08-23 00:00:52,489 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: indexUsingGET_1
+2022-08-23 00:00:52,490 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: indexUsingGET_2
+2022-08-23 00:00:52,533 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_8
+2022-08-23 00:00:52,535 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_9
+2022-08-23 00:00:52,539 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_10
+2022-08-23 00:00:52,553 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_17
+2022-08-23 00:00:52,556 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_9
+2022-08-23 00:00:52,560 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeUsingGET_3
+2022-08-23 00:00:52,564 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeUsingGET_4
+2022-08-23 00:00:52,568 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_9
+2022-08-23 00:00:52,571 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_9
+2022-08-23 00:00:52,573 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_5
+2022-08-23 00:00:52,574 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_10
+2022-08-23 00:00:52,577 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_11
+2022-08-23 00:00:52,579 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_18
+2022-08-23 00:00:52,580 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_19
+2022-08-23 00:00:52,583 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_10
+2022-08-23 00:00:52,586 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_8
+2022-08-23 00:00:52,587 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_8
+2022-08-23 00:00:52,589 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_10
+2022-08-23 00:00:52,590 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_8
+2022-08-23 00:00:52,592 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_8
+2022-08-23 00:00:52,593 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_8
+2022-08-23 00:00:52,594 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_8
+2022-08-23 00:00:52,596 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_8
+2022-08-23 00:00:52,599 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_10
+2022-08-23 00:00:52,601 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_6
+2022-08-23 00:00:52,603 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_11
+2022-08-23 00:00:52,605 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_12
+2022-08-23 00:00:52,607 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_20
+2022-08-23 00:00:52,609 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_21
+2022-08-23 00:00:52,612 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_11
+2022-08-23 00:00:52,614 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_9
+2022-08-23 00:00:52,615 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_9
+2022-08-23 00:00:52,617 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_11
+2022-08-23 00:00:52,618 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_9
+2022-08-23 00:00:52,619 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_9
+2022-08-23 00:00:52,621 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_9
+2022-08-23 00:00:52,622 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_9
+2022-08-23 00:00:52,624 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_9
+2022-08-23 00:00:52,626 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_11
+2022-08-23 00:00:52,628 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchRemoveUsingPOST_1
+2022-08-23 00:00:52,629 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_12
+2022-08-23 00:00:52,636 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_13
+2022-08-23 00:00:52,641 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_12
+2022-08-23 00:00:52,646 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_13
+2022-08-23 00:00:52,648 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_12
+2022-08-23 00:00:52,652 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_12
+2022-08-23 00:00:52,653 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_7
+2022-08-23 00:00:52,655 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_13
+2022-08-23 00:00:52,657 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_14
+2022-08-23 00:00:52,659 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_22
+2022-08-23 00:00:52,661 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_23
+2022-08-23 00:00:52,663 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_14
+2022-08-23 00:00:52,665 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_10
+2022-08-23 00:00:52,667 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_10
+2022-08-23 00:00:52,668 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_13
+2022-08-23 00:00:52,669 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_10
+2022-08-23 00:00:52,671 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_10
+2022-08-23 00:00:52,672 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_10
+2022-08-23 00:00:52,673 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_10
+2022-08-23 00:00:52,675 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_10
+2022-08-23 00:00:52,686 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_15
+2022-08-23 00:00:52,687 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingHEAD_1
+2022-08-23 00:00:52,688 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingPOST_1
+2022-08-23 00:00:52,689 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingPUT_1
+2022-08-23 00:00:52,690 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingPATCH_1
+2022-08-23 00:00:52,691 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingDELETE_1
+2022-08-23 00:00:52,691 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingOPTIONS_1
+2022-08-23 00:00:52,692 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingTRACE_1
+2022-08-23 00:00:52,706 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_13
+2022-08-23 00:00:52,715 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: batchRemoveUsingPOST_2
+2022-08-23 00:00:52,717 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_14
+2022-08-23 00:00:52,723 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_16
+2022-08-23 00:00:52,727 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_24
+2022-08-23 00:00:52,735 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_15
+2022-08-23 00:00:52,738 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeUsingGET_5
+2022-08-23 00:00:52,740 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: treeViewUsingGET_1
+2022-08-23 00:00:52,743 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_14
+2022-08-23 00:00:52,754 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: addUsingGET_14
+2022-08-23 00:00:52,755 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: detailUsingGET_8
+2022-08-23 00:00:52,757 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: editUsingGET_15
+2022-08-23 00:00:52,758 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: listUsingGET_17
+2022-08-23 00:00:52,760 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_25
+2022-08-23 00:00:52,762 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: removeUsingPOST_26
+2022-08-23 00:00:52,765 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: saveUsingPOST_16
+2022-08-23 00:00:52,766 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingGET_11
+2022-08-23 00:00:52,767 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingHEAD_11
+2022-08-23 00:00:52,769 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPOST_15
+2022-08-23 00:00:52,770 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPUT_11
+2022-08-23 00:00:52,771 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingPATCH_11
+2022-08-23 00:00:52,773 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingDELETE_11
+2022-08-23 00:00:52,774 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingOPTIONS_11
+2022-08-23 00:00:52,775 INFO (CachingOperationNameGenerator.java:40)- Generating unique operation named: updateUsingTRACE_11
+2022-08-23 00:00:52,793 INFO (DirectJDKLog.java:180)- Starting ProtocolHandler ["http-nio-80"]
+2022-08-23 00:00:52,806 INFO (DirectJDKLog.java:180)- Using a shared selector for servlet write/read
+2022-08-23 00:00:52,816 INFO (TomcatWebServer.java:206)- Tomcat started on port(s): 80 (http) with context path ''
+2022-08-23 00:00:52,819 INFO (StartupInfoLogger.java:59)- Started AdminApplication in 7.521 seconds (JVM running for 8.069)
+2022-08-23 00:00:52,821 INFO (AdminApplication.java:35)- 项目启动啦，访问路径：http://192.168.31.136:80
+2022-08-23 00:00:56,065 INFO (DirectJDKLog.java:180)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-08-23 00:00:56,065 INFO (FrameworkServlet.java:494)- FrameworkServlet 'dispatcherServlet': initialization started
+2022-08-23 00:00:56,090 INFO (FrameworkServlet.java:509)- FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2022-08-23 00:00:56,105 INFO (AbstractValidatingSessionManager.java:233)- Enabling session validation scheduler...
+2022-08-23 00:00:56,140 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/login
+2022-08-23 00:00:56,141 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-23 00:00:56,142 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.system.controller.LoginController.login
+2022-08-23 00:00:56,143 INFO (WebLogAspect.java:43)- 参数 : [{}]
+2022-08-23 00:00:56,143 INFO (WebLogAspect.java:58)- 耗时 : 3
+2022-08-23 00:00:56,143 DEBUG (WebLogAspect.java:51)- 返回值 : login
+2022-08-23 00:00:56,647 INFO (WebLogAspect.java:37)- 请求地址 : http://192.168.31.136/getVerify
+2022-08-23 00:00:56,648 INFO (WebLogAspect.java:38)- HTTP METHOD : GET
+2022-08-23 00:00:56,648 INFO (WebLogAspect.java:41)- CLASS_METHOD : com.java2nb.system.controller.LoginController.getVerify
+2022-08-23 00:00:56,648 INFO (WebLogAspect.java:43)- 参数 : [org.apache.shiro.web.servlet.ShiroHttpServletRequest@19966691, org.apache.shiro.web.servlet.ShiroHttpServletResponse@17518bd3]
+2022-08-23 00:00:57,499 INFO (RandomValidateCodeUtil.java:76)- 2209
+2022-08-23 00:00:57,531 INFO (WebLogAspect.java:58)- 耗时 : 884
+2022-08-23 00:00:57,531 DEBUG (WebLogAspect.java:51)- 返回值 : null
+2022-08-23 00:06:18,123 INFO (AbstractApplicationContext.java:993)- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d1dee39: startup date [Tue Aug 23 00:00:45 CST 2022]; root of context hierarchy
+2022-08-23 00:06:18,126 INFO (DefaultLifecycleProcessor.java:366)- Stopping beans in phase 2147483647
+2022-08-23 00:06:18,127 INFO (MBeanExporter.java:451)- Unregistering JMX-exposed beans on shutdown
+2022-08-23 00:06:18,128 INFO (MBeanRegistrationSupport.java:183)- Unregistering JMX-exposed beans
+2022-08-23 00:06:18,150 INFO (Log4j2Impl.java:106)- {dataSource-1} closed
+2022-08-23 00:06:18,151 INFO (AbstractValidatingSessionManager.java:250)- Disabled session validation scheduler.
