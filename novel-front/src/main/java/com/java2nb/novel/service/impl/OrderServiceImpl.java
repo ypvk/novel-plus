@@ -61,7 +61,7 @@ public class OrderServiceImpl implements OrderService {
         if(orderPay.getPayStatus()!=1) {
             //此订单还未处理过
 
-            if (tradeStatus.equals("TRADE_SUCCESS") || tradeStatus.equals("TRADE_FINISHED")) {
+            if (tradeStatus.equals("TRADE_SUCCESS") || tradeStatus.equals("TRADE_FINISHED") || tradeStatus.equals("VERIFIED")) {
                 //支付成功
                 //1.更新订单状态为成功
                 orderPay.setPayStatus((byte) 1);

@@ -12,7 +12,7 @@
 <div th:replace="common/top :: top('')">
 </div>
 
-<form action="/pay/aliPay" method="post" id="payform" name="payform">
+<form action="/pay/paypal" method="post" id="payform" name="payform">
     <div class="main box_center cf">
 
         <div class="channelWrap channelPay cf">
@@ -26,9 +26,9 @@
                 <div class="payCon">
                     <h5>选择充值方式</h5>
                     <ul class="pay_way cf" id="ulPayType">
-                        <li class="on"  valp="1"><img class="pay_pic" src="../images/pay_zfb.png" alt="支付宝支付" /></li>
-                        <li valp="2"><img class="pay_pic" src="../images/pay_wx.png" alt="微信支付" /></li>
-
+                        <!-- <li class="on"  valp="1"><img class="pay_pic" src="../images/pay_zfb.png" alt="支付宝支付" /></li> -->
+                        <!-- <li valp="2"><img class="pay_pic" src="../images/pay_wx.png" alt="微信支付" /></li>-->
+                        <li class="on" valp="3"><img class="pay_pic" src="../images/paypal.png" alt="PayPal" /></li>
                     </ul>
                     <h5>选择充值金额</h5>
                     <ul class="pay_way cf" id="ulZFWX">

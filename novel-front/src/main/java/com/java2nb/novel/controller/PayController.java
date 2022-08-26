@@ -6,10 +6,16 @@ import com.alipay.api.internal.util.AlipaySignature;
 import com.alipay.api.request.AlipayTradePagePayRequest;
 import com.java2nb.novel.core.bean.UserDetails;
 import com.java2nb.novel.core.config.AlipayProperties;
+import com.java2nb.novel.core.config.PayPalProperties;
 import com.java2nb.novel.service.OrderService;
+import com.paypal.api.payments.*;
+import com.paypal.base.rest.APIContext;
+import com.paypal.base.rest.PayPalRESTException;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,8 +24,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author 11797
@@ -35,6 +40,9 @@ public class PayController extends BaseController {
 
     private final OrderService orderService;
 
+    private final PayPalProperties payPalProperties;
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(PayController.class);
 
     /**
      * 支付宝支付
@@ -77,6 +85,121 @@ public class PayController extends BaseController {
 
 
 
+
+    }
+    /**
+     * papal pay
+     */
+    @SneakyThrows
+    @PostMapping("paypal")
+    public void paypalPay(Integer payAmount,HttpServletRequest req,HttpServletResponse resp) {
+        UserDetails userDetails = getUserDetails(req);
+        if (userDetails == null) {
+            //redirect to login page
+            resp.sendRedirect("/user/login.html?originUrl=/pay/aliPay?payAmount=" + payAmount);
+            return;
+        }
+        //create paypal order 3 is paypal
+        Long outTradeNo = orderService.createPayOrder((byte)3,payAmount,userDetails.getId());
+        //create paypal payments
+        APIContext apiContext = new APIContext(payPalProperties.getClientId(), payPalProperties.getClientSecret(), payPalProperties.getMode());
+        Details details = new Details();
+        details.setSubtotal(String.valueOf(payAmount));
+        //TODO set tax
+        //details.setTax();
+
+        Amount amount = new Amount();
+        amount.setCurrency("USD");
+        amount.setTotal(String.valueOf(payAmount));
+        amount.setDetails(details);
+
+        Transaction transaction = new Transaction();
+        transaction.setAmount(amount);
+        transaction.setDescription("payment for novel credits");
+
+        // ### Items
+        Item item = new Item();
+        item.setName("Novel Credits").setQuantity("1").setCurrency("USD").setPrice(String.valueOf(payAmount));
+        ItemList itemList = new ItemList();
+        List<Item> items = new ArrayList<Item>();
+        items.add(item);
+        itemList.setItems(items);
+        transaction.setItemList(itemList);
+
+        List<Transaction> transactions = new ArrayList<Transaction>();
+        transactions.add(transaction);
+        // ###Payer
+        Payer payer = new Payer();
+        payer.setPaymentMethod("paypal");
+
+        Payment payment = new Payment();
+        payment.setIntent("sale");
+        payment.setPayer(payer);
+        payment.setTransactions(transactions);
+
+        // ###Redirect URLs
+        RedirectUrls redirectUrls = new RedirectUrls();
+        redirectUrls.setCancelUrl(req.getScheme() + "://"
+                + req.getServerName() + ":" + req.getServerPort()
+                + req.getContextPath() + "/pay/paypal/notify?uid=" + outTradeNo);
+        redirectUrls.setReturnUrl(req.getScheme() + "://"
+                + req.getServerName() + ":" + req.getServerPort()
+                + req.getContextPath() + "/pay/paypal/notify?uid=" + outTradeNo);
+        payment.setRedirectUrls(redirectUrls);
+
+        //not try to create payment
+        Payment createdPayment = null;
+        try {
+            createdPayment = payment.create(apiContext);
+            LOGGER.info("Created payment with id = "
+                    + createdPayment.getId() + " and status = "
+                    + createdPayment.getState());
+            // ###Payment Approval Url
+            Iterator<Links> links = createdPayment.getLinks().iterator();
+            while (links.hasNext()) {
+                Links link = links.next();
+                if (link.getRel().equalsIgnoreCase("approval_url")) {
+                    req.setAttribute("redirectURL", link.getHref());
+                    //redirect
+                    resp.sendRedirect(link.getHref());
+                }
+            }
+
+        } catch (PayPalRESTException e) {
+            e.printStackTrace();
+            LOGGER.error(e.getMessage());
+            resp.getWriter().print("error create payment, error message " + e.getMessage());
+        }
+    }
+    @SneakyThrows
+    @RequestMapping("paypal/notify")
+    public void paypalNotify(HttpServletRequest req, HttpServletResponse resp) {
+        //paymentid
+        String paymentId = req.getParameter("paymentId");
+        String outTradeNo = req.getParameter("uid");
+        //get trade status
+        String payerId = req.getParameter("PayerID");
+        Payment payment = new Payment();
+        if (paymentId != null) {
+            payment.setId(paymentId);
+        }
+
+        PaymentExecution paymentExecution = new PaymentExecution();
+        paymentExecution.setPayerId(payerId);
+        Payment createdPayment = null;
+        APIContext apiContext = new APIContext(payPalProperties.getClientId(), payPalProperties.getClientSecret(), payPalProperties.getMode());
+        try {
+            createdPayment = payment.execute(apiContext, paymentExecution);
+        } catch (PayPalRESTException e) {
+            e.printStackTrace();
+            LOGGER.error(e.getMessage());
+            return;
+        }
+        //get status
+        String tradeStatus = createdPayment.getPayer().getStatus();
+        orderService.updatePayOrder(Long.parseLong(outTradeNo), paymentId, tradeStatus);
+        LOGGER.info("success get pay return");
+        resp.sendRedirect("/pay/index.html");
 
     }
 
